@@ -10,7 +10,7 @@ crate-type=["cdylib"]
 
 [dependencies]
 rand_core = { version = "0.5", default-features = false, features = ["getrandom"] }
-frost-dalek = { git="https://github.com/rodrigomd94/frost-dalek.git }
+frost-dalek = { git="https://github.com/rodrigomd94/frost-dalek.git" }
 ed25519-dalek = "1"
 curve25519-dalek = "3"
 napi = "2"
