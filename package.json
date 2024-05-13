@@ -12,10 +12,10 @@
     }
   },
   "scripts": {
-    "create-dist": "mkdir -p dist",
+    "create-dist": "mkdir dist",
     "napi:build": "napi build --release --platform",
     "napi:build:debug": "napi build",
-    "build": "pnpm create-dist && pnpm napi:build && cp index.* dist && cp *.node dist",
+    "build": "pnpm create-dist && pnpm napi:build && copy index.* dist && copy *.node dist",
     "build:debug": "pnpm create-dist && pnpm napi:build:debug && cp index.* dist",
     "build-examples": "pnpm build && tsc -p tsconfig.json",
     "artifacts": "napi artifacts"
